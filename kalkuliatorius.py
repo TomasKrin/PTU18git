@@ -61,3 +61,22 @@ while True:
         print(res_string)
         history.append(res_string)
         print('*' * 30)
+
+    elif selection == '5':
+        range_l = []
+        x = int(x)
+        y = int(y)
+        if x > y:
+
+            for sk in range(x, y - 1, -1):
+                range_l.append(sk)
+                print(sk, end=' ')
+            history.append(range_l)
+            print('\n', '*' * 30)
+
+        else:
+            for sk in range(x, y + 1):
+                range_l.append(sk)
+                print(sk, end=' ')
+            history.append(range_l)
+            print('\n', '*' * 30)
