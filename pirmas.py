@@ -1,2 +1,2 @@
 print('Hello new project')
-print('test')
+print('Prideta po pirmojo commit')
