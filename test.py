@@ -17,3 +17,4 @@ if type(suma) == float:
         print(f'Jūsų įvestų skaičių suma yra: {int(suma)}')
     else:
         print(f'Jūsų įvestų skaičių suma yra: {suma}')
+print('Hello GITHUB')
