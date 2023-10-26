@@ -37,3 +37,11 @@ while True:
         print(res_string)
         history.append(res_string)
         print('*' * 30)
+
+    elif selection == '2':
+        res = x - y
+        res_int_check = int(res) if res.is_integer() else res
+        res_string = f'{x_int_check} - {y_int_check} = {res_int_check}'
+        print(res_string)
+        history.append(res_string)
+        print('*' * 30)
