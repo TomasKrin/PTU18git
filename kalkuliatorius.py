@@ -19,3 +19,21 @@ while True:
             else:
                 print(el)
         break
+
+    if not selection in menu_variants:
+        print('Tokio pasirinkimo nėra..')
+        print('*' * 30)
+        continue
+
+    x = float(input('Įveskite pirmą skaičių: '))
+    y = float(input('Įveskite antrą skaičių: '))
+    x_int_check = int(x) if x.is_integer() else x
+    y_int_check = int(y) if y.is_integer() else y
+
+    if selection == '1':
+        res = x + y
+        res_int_check = int(res) if res.is_integer() else res
+        res_string = f'{x_int_check} + {y_int_check} = {res_int_check}'
+        print(res_string)
+        history.append(res_string)
+        print('*' * 30)
