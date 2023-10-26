@@ -20,6 +20,11 @@ while True:
                 print(el)
         break
 
+    if not selection in menu_variants:
+        print('Tokio pasirinkimo nėra..')
+        print('*' * 30)
+        continue
+
     x = float(input('Įveskite pirmą skaičių: '))
     y = float(input('Įveskite antrą skaičių: '))
     x_int_check = int(x) if x.is_integer() else x
