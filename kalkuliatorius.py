@@ -53,7 +53,7 @@ while True:
         print(res_string)
         history.append(res_string)
         print('*' * 30)
-    
+
     elif selection == '4':
         res = x / y
         res_int_check = int(res) if res.is_integer() else res
